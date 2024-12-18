@@ -1,0 +1,456 @@
+.info_hotel-name {
+    padding-top: 24px;
+}
+
+.info_hotel-name > h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--title-text);
+}
+
+.info_hotel-name > h3{
+    margin-top: 10px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #ff385c;
+}
+
+.info_hotel-tasks {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_hotel-tasks > p {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--primary-text);
+    text-decoration: underline;
+}
+
+.info_hotel-tasks > p:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.info_hotel-tasks span {
+    font-size: 1.1rem;
+    padding: 5px;
+    border-radius: 10px;
+    align-self: flex-end;
+    text-decoration: underline;
+    margin-left: 10px;
+}
+
+.info_hotel-tasks span:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #eee6e6;
+}
+
+.info_hotel-tasks span > i {
+    font-size: 1.2rem;
+    color: var(--primary-text);
+    padding-left: 8px;
+}
+
+.info_hotel-tasks form {
+    display: inline-block;
+}
+
+.info_hotel-tasks a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #ff385c;
+}
+
+.info_hotel-tasks a:hover {
+    cursor: pointer;
+}
+
+.info_hotel-img-list {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.info_hotel-img-list .info_hotel-img {
+    width: 40%;
+    height: 100%;
+}
+
+.info_hotel-img-list .half-left {
+    margin-right: 5px;
+}
+
+.info_hotel-img-list .half-right {
+    margin-left: 5px;
+}
+
+.info_hotel-img-list .half-left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.info_hotel-img-list .half-right img {
+    width: 100%;
+    height: calc(50% - 5px);
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .info_hotel-img {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .info_hotel-img--half-left,
+    .info_hotel-img--half-right {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info_hotel-img--half-left {
+        margin-right: 0;
+    }
+}
+
+.info_hotel-relate {
+    padding: 10px 0;
+    display: flex;
+}
+
+.info_hotel-service {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_hotel-service > h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--title-text);
+    padding: 10px 0;
+}
+
+.hotel-service-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hotel-service-item {
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.hotel-service-item i {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    color: #3b4efa;
+}
+
+.info_hotel-description {
+    width: 50%;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_hotel-description > h3 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--title-text);
+    padding: 10px 0;
+}
+
+.info_hotel-description > p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #e76363;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.info_hotel-description > pre {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-text);
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+.info_hotel-more {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.info_hotel-more > h3 {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--title-text);
+    padding: 10px 0;
+}
+
+.hotel-description-rules,
+.hotel-description-security,
+.hotel-description-policy {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+}
+
+.hotel-description-rules > h4,
+.hotel-description-security > h4,
+.hotel-description-policy > h4 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--title-text);
+    padding: 10px;
+}
+
+.hotel-description-rules > p,
+.hotel-description-security > p,
+.hotel-description-policy > p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--primary-text);
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.hotel-description-rules > span,
+.hotel-description-security > span,
+.hotel-description-policy > span {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--title-text);
+    line-height: 1.5;
+    text-decoration: underline;
+    padding: 10px;
+    transition: transform 0.3s;
+}
+
+.hotel-description-rules > span:hover,
+.hotel-description-security > span:hover,
+.hotel-description-policy > span:hover {
+    transform: translateX(10px);
+    cursor: pointer;
+}
+
+.fa-angle-right {
+    margin-left: 5px;
+}
+
+// CSS FORM BOOKING
+#booking-form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+#booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#booking-form label {
+    margin: 10px 0 0;
+    font-size: 1rem;
+}
+
+#booking-form input[type="datetime-local"],
+#booking-form input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    outline: 1px solid #c2dff1;
+}
+
+#booking-form input[type="text"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #eee;
+    font-weight: bold;
+    outline: 1px solid #c2dff1;
+}
+
+#booking-form button {
+    align-self: center;
+    width: 50%;
+    padding: 10px;
+    margin: 20px 0;
+    background-color: #ff385c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+#booking-form button:hover {
+    opacity: 0.8;
+}
+
+.error-message {
+    font-size: 1.1rem;
+    color: red;
+}
+
+#paymentModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.4s ease;
+    transform: translateY(-50px);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #d9534f;
+}
+
+.modal-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    background-image: linear-gradient(45deg, #063d6d, #50b1ee); /* Thay đổi màu gradient ở đây */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+}
+
+.modal-content p {
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#confirmPayment {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmPayment:hover {
+    background-color: #4cae4c;
+}
+
+#qrCodeContainer {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    animation: fadeInQR 0.3s ease;
+}
+
+@keyframes fadeInQR {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#qrCodeImage {
+    max-width: 150px;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+
+#paymentMethod, #paymentType{
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 10px 0;
+    outline: 1px solid #d9534f;
+}

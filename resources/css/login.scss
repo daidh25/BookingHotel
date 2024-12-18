@@ -1,0 +1,84 @@
+.form-login {
+    @media (max-width: 768px) {
+        justify-content: end !important;
+    }
+    > form {
+        display: flex;
+        flex-flow: row nowrap !important;
+        gap: 15px;
+        width: auto !important;
+        > .login-logo {
+            width: 300px;
+            height: 300px;
+            background: url('/images/logo.png') no-repeat center center;
+            background-size: contain;
+            padding: 30px;
+            > img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        > .login-body {
+            width: 300px;
+            display: flex;
+            flex-flow: column;
+            gap: 10px;
+            >p .forgot-pass{
+                font-size: 13px;
+            }
+            > .login-google {
+                width: 100%;
+                display: flex;
+                flex-flow: column;
+                gap: 10px;
+                justify-content: center;
+                > p {
+                    text-align: center;
+                    font-size: 0.8rem;
+                    color: #999;
+                    > a {
+                        color: #1c6ecc;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline !important;
+                        }
+                    }
+                }
+                > div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    > a {
+                        display: flex;
+                        flex-flow: row nowrap;
+                        gap: 10px;
+                        align-items: center;
+                        justify-content: center;
+                        font-size: 1rem;
+                        border: 1px solid #ddd;
+                        padding: 5px 15px;
+                        border-radius: 10px;
+                        > i {
+                            font-size: 1.1rem;
+                            color: #12d684;
+                        }
+                        > span {
+                            font-size: 0.8rem;
+                            color: #444;
+                        }
+                    }
+                }
+            }
+        }
+        @media (max-width: 768px) {
+            width: calc(100% - 80px) !important;
+            > .login-logo {
+                display: none;
+            }
+            > .login-body {
+                width: 100%;
+            }
+        }
+    }
+}

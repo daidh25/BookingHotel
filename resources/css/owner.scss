@@ -1,0 +1,237 @@
+.container-owner {
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    background-color: #f0f2f5;
+}
+
+.sidebar-owner {
+    background-color: #333;
+    color: #fff;
+    width: 20%;
+    height: 600px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.sidebar-owner > h2 {
+    color: #e43270;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 0.1px solid #fff;
+    margin-bottom: 10px;
+}
+
+.sidebar-owner__item {
+    transition: transform 0.3s;
+}
+
+.sidebar-owner__item:hover {
+    background-color: #535353;
+    border-radius: 5px;
+    transform: translateX(10px);
+    transition: transform 0.3s;
+}
+
+.sidebar-owner .owner-logout {
+  border-radius: 10px;
+  background-color: #e43270;
+  color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.content-admin-db{
+    width: 80%;
+}
+
+.owner-logout a{
+  color: #fff;
+}
+
+.sidebar-owner .owner-logout:hover {
+    transform: scale(0.95);
+}
+
+.sidebar-owner__link {
+    color: #fff;
+    padding: 10px;
+    margin: 10px;
+    display: block;
+    font-size: 16px;
+}
+
+.table-owner {
+    width: 80%;
+    border-collapse: collapse;
+    margin-left: 20px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.table-owner > h3 {
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.table-owner > table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.table-owner > table th {
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+.table-owner > table th,
+.table-owner > table td {
+    text-align: center;
+    border: 1px solid #f1f3f6;
+    padding: 10px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-owner .btn-edit {
+    background-color: #007bff;
+}
+
+.table-owner .btn-delete {
+    background-color: #dc3545;
+}
+
+.table-owner .btn-accept {
+    font-size: 1rem;
+    padding: 8px 12px;
+    font-weight: 500;
+    background-color: #28a745;
+}
+
+.table-owner .btn-checkout {
+    background-color: #ffc107;
+}
+
+.table-owner table form {
+    display: inline-block;
+}
+
+//CSS EDIT-HOTEL.BLADE
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-control:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgb(0 123 255 / 25%);
+}
+
+textarea.form-control {
+    resize: vertical;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.btn-submit {
+    background-color: #007bff;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+input[type="file"] {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.table-owner > table > form > .btn {
+    padding: 7px 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+.table-owner > form > .btn {
+    padding: 7px 12px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+.table-owner table .btn {
+    padding: 5px 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 700;
+}
+
+#form-update.owner-changepassword {
+    padding: 0;
+    min-height: auto;
+    width: 100%;
+}
+
+#form-update.owner-changepassword #form {
+    padding: 20px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#form-update.owner-changepassword #form .form-btn .button-submit {
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #50b1ee;
+    background-color: #fff;
+    color: #50b1ee;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
